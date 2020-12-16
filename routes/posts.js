@@ -31,13 +31,11 @@ router.get("/:id", async (req, res) => {
   const post = await postsData.getPost(req.params.id);
   const movie = await moviesData.getMovie(post.postMovieId);
   const allComments = await commentsData.getAllComments(req.params.id);
-  res.render("partials/postDetail", {
-    title: post.postTitle,
+  res.render("partials/postPage", {
     post: post,
     movie: movie,
     allComments: allComments,
   });
 });
-router.post("/", async (req, res) => {});
 
 module.exports = router;
