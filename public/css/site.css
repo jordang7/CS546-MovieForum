@@ -1,8 +1,10 @@
 /* Insert Css here */
 /* #postLink, */
-body {
-   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-   font-weight: 300;
+body,
+.post {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
 }
 #recTitle {
   display: none;
@@ -18,7 +20,7 @@ body {
 }
 
 .navBar {
-  background-color: #A9A9A9;
+  background-color: #a9a9a9;
 }
 
 #footer {
@@ -48,10 +50,29 @@ body {
 
 #footer {
   width: 100%;
-  position:absolute;
+  position: absolute;
   bottom: 0;
 }
 
 #footerLink {
-  color: #A9A9A9;
+  color: #a9a9a9;
+}
+
+.postPageImg {
+  width: 250px;
+}
+
+.post {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  border-radius: 1px;
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+.commentClass {
+  border-radius: 10px;
+  padding: 15px;
+  margin: 5px;
 }
